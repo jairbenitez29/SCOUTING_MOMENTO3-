@@ -1,0 +1,82 @@
+{
+  "origen": "mysql",
+  "fecha_referencia": "2026-10-07",
+  "filas_validas": 41495,
+  "train": 33196,
+  "test": 8299,
+  "umbral_eur": 700000.0,
+  "elite": 11077,
+  "estandar": 30418,
+  "nulos_estatura": 2183,
+  "mejores_hiperparametros": {
+    "modelo__class_weight": "balanced",
+    "modelo__max_depth": 10,
+    "modelo__min_samples_leaf": 15,
+    "modelo__n_estimators": 80
+  },
+  "mejor_f1_cv": 0.5132,
+  "resultados": [
+    {
+      "modelo": "Árbol libre",
+      "accuracy_train": 0.7583,
+      "accuracy_test": 0.7143,
+      "precision": 0.3984,
+      "recall": 0.1381,
+      "f1": 0.2052,
+      "auc": 0.6498,
+      "confusion": [
+        [
+          5622,
+          462
+        ],
+        [
+          1909,
+          306
+        ]
+      ]
+    },
+    {
+      "modelo": "Árbol podado",
+      "accuracy_train": 0.733,
+      "accuracy_test": 0.7331,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "auc": 0.6677,
+      "confusion": [
+        [
+          6084,
+          0
+        ],
+        [
+          2215,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "Random Forest",
+      "accuracy_train": 0.6241,
+      "accuracy_test": 0.6074,
+      "precision": 0.382,
+      "recall": 0.7621,
+      "f1": 0.5089,
+      "auc": 0.6923,
+      "confusion": [
+        [
+          3353,
+          2731
+        ],
+        [
+          527,
+          1688
+        ]
+      ]
+    }
+  ],
+  "importancia_variables": {
+    "Edad": 0.7322975624671813,
+    "Estatura": 0.16790761956183273,
+    "Posición": 0.09979481797098602
+  }
+}
