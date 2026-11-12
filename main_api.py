@@ -18,7 +18,7 @@ def cargar_modelo():
     return joblib.load(RUTA) # Solo cargar archivos locales generados por una fuente confiable.
 
 class Jugador(BaseModel):
-    edad: int = Field(ge=15,le=65)
+    edad: int = Field(ge=18,le=49)
     estatura_cm: float | None = Field(default=None,ge=130,le=230)
     posicion: str = Field(min_length=2,max_length=80)
 
